@@ -25,9 +25,9 @@ int	ft_conversion(va_list args, char c, int size)
 	if (c == 'u')
 		size = ft_lp(ft_itoa_unsig(va_arg(args, unsigned int)), size);
 	if (c == 'x')
-		size = ft_lp(ft_ib(va_arg(args, int), "0123456789abcdefg"), size);
+		size = ft_lp(ft_ib(va_arg(args, int), "0123456789abcdef"), size);
 	if (c == 'X')
-		size = ft_lp(ft_ib(va_arg(args, int), "0123456789ABCDEFG"), size);
+		size = ft_lp(ft_ib(va_arg(args, int), "0123456789ABCDEF"), size);
 	if (c == '%')
 	{
 		write(1, "%", 1);
